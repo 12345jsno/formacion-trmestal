@@ -1,0 +1,303 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.main {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/*seccion 1*/
+.section-1 {
+  width: 100%;
+  /* height: 8em; */
+  background: linear-gradient(90deg, #114102, #48ff00);
+  /* padding: 1.9em 0; */
+}
+
+.header {
+  background: linear-gradient(90deg, #0044ff, #0ec7ff);
+  width: 100%;
+  /* height: 4em; */
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  padding: 1.9em 0;
+}
+
+.img {
+  width: 100%;
+  height: auto;
+}
+
+#menu-toggle {
+  display: none;
+}
+#menu-toggle-l {
+  display: none;
+  background: url("img/menu.png");
+}
+
+.menu {
+  width: 55%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  align-items: center;
+}
+
+.img img {
+  object-fit: cover;
+  height: 100%;
+}
+
+.menu a {
+  display: flex;
+  text-decoration: none;
+  color: blanchedalmond;
+  padding: 2em 1em;
+  font-weight: 600;
+}
+
+.menu a:hover {
+  background-color: #fd0000;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+/*seccion 2*/
+.section-2 {
+  width: 100%;
+  flex: 1;
+  /* height: calc(100vh - 10em); */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1em 0;
+}
+
+.s2-textos {
+  width: 80%;
+  height: 25%;
+}
+
+.s2-img {
+  width: 80%;
+  height: 75%;
+  display: flex;
+  flex-direction: row;
+  /* Agregado */
+  flex-wrap: wrap;
+  gap: 1em;
+}
+
+.titulo {
+  font-size: 2em;
+  text-align: center;
+  color: #fd0000;
+}
+
+.s2-textos hr {
+  width: 5em;
+  height: 0.25em;
+  background: rgb(0, 68, 255);
+  border: none;
+  border-radius: 1em;
+  margin: 1em auto;
+}
+
+.s2-textos p {
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
+.s2-contenido {
+  flex: 1;
+  /* width: 33.33%; */
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0.5em;
+}
+
+.contenido-img {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.contenido-img img {
+  object-fit: cover;
+  width: 100%;
+}
+
+.contenido-texto {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0.5em 0;
+}
+
+.contenido-texto h2 {
+  font-size: 1.25em;
+  color: #ff0d0d;
+}
+
+.contenido-texto p {
+  font-size: 1em;
+  color: #000000;
+  margin: 1em 0;
+  text-align: center;
+}
+
+.contenido-texto a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  background: linear-gradient(90deg, #0044ff, #0ec7ff);
+  font-weight: 800;
+  width: 35%;
+  padding: 0.5em 0;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+}
+
+/*seccion 3*/
+.section-3 {
+  width: 100%;
+  height: 10em;
+  background: linear-gradient(90deg, #0044ff, #0ec7ff);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-3 hr {
+  background: linear-gradient(90deg, #48ff00, #114102);
+  width: 100%;
+  height: 5%;
+  border: none;
+}
+
+.s3-contenido {
+  width: 100%;
+  height: 65%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.s3-logo {
+  width: 50%;
+}
+
+.s3-logo img {
+  object-fit: cover;
+  height: 100%;
+}
+
+.s3-texto {
+  width: 30%;
+}
+
+.s3-texto h3 {
+  font-size: 1.1em;
+  color: #fff;
+  margin: 0.25em 0;
+}
+
+.s3-texto p {
+  font-size: 0.9em;
+  color: #fff;
+  font-weight: 500;
+}
+
+.s3-texto a {
+  font-size: 0.9em;
+  color: rgb(0, 54, 5);
+  text-decoration: none;
+}
+
+.footer {
+  width: 100%;
+  height: 30%;
+  border-top: #00ff15 solid 1px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  padding: 0 10%;
+}
+
+.autor {
+  color: #fff;
+  text-decoration: none;
+  margin: 0.25em;
+}
+
+.politicas {
+  color: #fff;
+  text-decoration: none;
+  margin: 5em;
+}
+
+@media (width < 1100px) {
+  .s2-img {
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+  .s2-contenido {
+    flex-grow: 1;
+    width: 100%;
+  }
+  .s3-logo {
+    width: 40%;
+    margin-right: 1em;
+  }
+  .s3-logo img {
+    width: 100%;
+    object-fit: contain;
+  }
+  .header {
+    position: relative;
+    height: auto;
+    align-items: start;
+    flex-direction: column;
+  }
+  #menu-toggle-l {
+    display: block;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 2em;
+    right: 2em;
+  }
+  .menu {
+    display: none;
+  }
+  #menu-toggle:checked ~ .menu {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  }
+}
